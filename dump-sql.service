@@ -1,0 +1,7 @@
+[Unit]
+Description=run dump-sql
+
+[Service]
+Type=oneshot
+WorkingDirectory=$CURRENT_DIR
+ExecStart=$CURRENT_DIR/dump-sql.sh

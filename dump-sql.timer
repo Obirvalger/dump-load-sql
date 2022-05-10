@@ -1,0 +1,12 @@
+[Unit]
+Description=hourly dump sql
+
+[Timer]
+Persistent=false
+OnCalendar=*-*-* *:0:0
+RandomizedDelaySec=3600
+FixedRandomDelay=true
+Unit=dump-sql.service
+
+[Install]
+WantedBy=default.target
